@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+  </head>
+  <script language="javascript">
+    function test() {
+      var val1 = document.kirim.T1.value;
+      if (val1 > 0 && 41) document.kirim.T2.value = "E";
+      if (val1 > 41 && 55) document.kirim.T2.value = "D";
+      if (val1 > 56 && 60) document.kirim.T2.value = "C";
+      if (val1 > 61 && 65) document.kirim.T2.value = "B-";
+      if (val1 > 66 && 70) document.kirim.T2.value = "B";
+      if (val1 > 71 && 75) document.kirim.T2.value = "B+";
+      if (val1 > 76 && 80) document.kirim.T2.value = "A-";
+      if (val1 > 81 && 85) document.kirim.T2.value = "A";
+      if (val1 > 86 && 100) document.kirim.T2.value = "A+";
+    }
+  </script>
+  <body>
+    <form method="POST" name="kirim">
+      <p>Nilai Angka <input type="text" name="T1" size="20" /> Nilai Huruf <input type="text" name="T2" size="20" /></p>
+      <p><input type="Button" value="Tebak" name="B1" onclick="test()" /></p>
+    </form>
+  </body>
+</html>
